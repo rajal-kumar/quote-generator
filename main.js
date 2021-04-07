@@ -18,7 +18,7 @@ async function getQuote() {
 
         const json = await response.json();
         displayQuote(json.message);
-        setFbButton(json.message);
+        // setFbButton(json.message);
     } catch (err) {
         console.log(err)
         alert('Failed to fetch new quote')
@@ -33,8 +33,8 @@ function displayQuote(quote) {
     quoteText.textContent = quote;
 }
 
-function setFbButton(quote) {
-    fbButton.setAttribute('href', `https://facebook.com/share?text=${quote} - Donald Trump`);
-}
+// function setFbButton(quote) {
+//     fbButton.setAttribute('href', `https://facebook.com/share?text=${quote} - Donald Trump`);
+// }
 
 getQuote();
