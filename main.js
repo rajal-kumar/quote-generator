@@ -4,7 +4,7 @@ const fbButton = document.querySelector('#js-share')
 
 newQuoteButton.addEventListener('click', getQuote);
 
-const endpoint = 'https://api.whatdoestrumpthink.com/api/v1/quotes/random';
+// const endpoint = 'https://api.whatdoestrumpthink.com/api/v1/quotes/random';
 
 async function getQuote() {
     spinner.classList.remove('hidden');
